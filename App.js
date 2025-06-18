@@ -65,8 +65,7 @@ const styles = StyleSheet.create({
     color: '#E8E8E8',
     marginTop: 10,
     fontWeight: 'bold',
-
-
+    border: '30px solid blue',
   },
   label2: {
     color: '#E8E8E8',
