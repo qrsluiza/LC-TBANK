@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#12111F',
-    padding: 20,
+    padding: 40,
     justifyContent: 'space-between',
   },
   content: {
@@ -64,7 +64,9 @@ const styles = StyleSheet.create({
   label: {
     color: '#E8E8E8',
     marginTop: 10,
-    fontWeight: 600,
+    fontWeight: 'bold',
+
+
   },
   label2: {
     color: '#E8E8E8',
@@ -75,7 +77,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#D9D9D9',
     height: 30,
     paddingHorizontal: 10,
-    borderRadius: 5,
   },
   footer: {
     alignItems: 'center',
@@ -84,13 +85,13 @@ const styles = StyleSheet.create({
   footerText: {
     color: '#E8E8E8',
     fontSize: 12,
-    fontWeight: 600,
+    fontWeight: 'bold',
   },
   footerText2: {
     color: '#E8E8E8',
     fontSize: 14,
     marginLeft: 110,
-    fontWeight: 600,
+    fontWeight: 'bold',
   },
 });
 
