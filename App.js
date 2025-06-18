@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Text, View, Image, StyleSheet, TextInput } from 'react-native';
+import { Button, Text, View, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 const App = () => {
   const [login, setLogin] = useState();
@@ -34,7 +34,10 @@ const App = () => {
 
 
         <View style={{ marginTop: 20 }}>
-          <Button title="Entrar" onPress={() => { }} color="#6EB1DF" />
+          <TouchableOpacity style={styles.botao} onPress={() => { }}>
+            <Text style={styles.botaoTexto}>ENTRAR</Text>
+          </TouchableOpacity>
+
           <Text style={styles.footerText2}>Criar uma conta</Text>
         </View>
       </View>
@@ -61,12 +64,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center', // centraliza verticalmente
   },
-  label: {
-    color: '#E8E8E8',
-    marginTop: 10,
-    fontWeight: 'bold',
-    border: '30px solid blue',
+
+  botao: {
+    backgroundColor: '#6EB1DF',
+    paddingVertical: 12,
+    borderRadius: 4,
+    alignItems: 'center',
   },
+
+  botaoTexto: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+
   label2: {
     color: '#E8E8E8',
     marginTop: 10,
